@@ -10,5 +10,5 @@ link : https://doi.org/10.3390/app10238660
 _______________________________________________________________
 
 # Example 
-Anomaly (Input)                   Direct Reconstucrion             Resample Reconstruction 
+                              
 <img src="images/original.jpeg"> <img src="images/original.jpeg">  <img src="images/original.jpeg">
