@@ -11,4 +11,4 @@ _______________________________________________________________
 
 # Example 
                               
-<img src="images/original.jpeg"><img src="images/direct.jpeg"><img src="images/resampled.jpeg"><img src="images/diff.jpeg">
+<img src="images/original.jpeg"><img src="images/direct.jpeg"><img src="images/resampled.jpeg"><img src="images/difference.jpeg">
