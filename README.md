@@ -11,4 +11,4 @@ _______________________________________________________________
 
 # Example 
 
-<img src="images/orig.jpeg">
+<img src="images/original.jpeg">
