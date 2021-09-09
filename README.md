@@ -15,15 +15,6 @@ _______________________________________________________________
 _________________________________________________________________
 
 # Example 2
-<p float="left">
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-</p>
-
-______________________________________________________________________
-
 
 
 | Anomoulous Image | direct recon | resampled recon | anomaly score map | 
@@ -35,5 +26,25 @@ ______________________________________________________________________
 
 
 
-<img src="images/original_anomalous_screw.png" height="256" width="256"><img src="images/direct_recon_screw.jpeg" height="256" width="256"><img src="images/resampled_recon_screw.jpeg" height="256" width="256"><img src="images/anomaly_score_map.jpeg" height="256" width="256" alt="Flowers in Chania">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p float="left">
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+</p>
+
+______________________________________________________________________
