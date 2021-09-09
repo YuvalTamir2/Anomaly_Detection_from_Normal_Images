@@ -152,7 +152,7 @@ class Decoder(nn.Module):
         x = self._conv_trans_1(x)
         x = F.relu(x)
         
-        return self._conv_trans_2(x)
+        return F.sigmoid(self._conv_trans_2(x))
     
 class Model(nn.Module):
     def __init__(self, num_hiddens, num_residual_layers, num_residual_hiddens, 
@@ -183,8 +183,7 @@ class Model(nn.Module):
     
     
     
-batch_size = 256
-num_training_updates = 15000
+
 
 num_hiddens = 128
 num_residual_hiddens = 32
