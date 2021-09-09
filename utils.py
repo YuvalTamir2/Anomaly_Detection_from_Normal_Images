@@ -22,7 +22,7 @@ import time
 ### HP : 
 IMAGE_SIZE = 256
 LEARNING_RATE = 4e-3
-EPOCHES = 5
+EPOCHES = 100
 ### load data : 
     
 transforms = T.Compose([T.Resize((IMAGE_SIZE,IMAGE_SIZE)), T.ToTensor()])
@@ -42,16 +42,15 @@ def train_vq_vae(train_loader, vq_model):
     vq_model.train()
     vq_optimizer = torch.optim.Adam(params = vq_model.parameters(), lr = LEARNING_RATE)
     since = time.time()
-    train_res_recon_error = []
-    train_res_perplexity = []
     for epoch in range(EPOCHES):
+        train_res_recon_error = []
+        train_res_perplexity = []
         print(f'Epoch {epoch} on the way')
         for idx,data in enumerate(train_loader):
             #data = data / 255.
             vq_optimizer.zero_grad()
-            data_variance = torch.std(data)
             vq_loss, data_recon, perplexity = model(data)
-            recon_error = F.mse_loss(data_recon, data) / data_variance
+            recon_error = F.binary_cross_entropy(data_recon, data)
             loss = recon_error + vq_loss
             loss.backward()
         
@@ -60,11 +59,11 @@ def train_vq_vae(train_loader, vq_model):
             train_res_recon_error.append(recon_error.item())
             train_res_perplexity.append(perplexity.item())
         
-            if (idx+1)  == 2:
-                print('%d iterations' % (epoch+1))
-                print('recon_error: %.3f' % np.mean(train_res_recon_error[-50:]))
-                print('perplexity: %.3f' % np.mean(train_res_perplexity[-50:]))
-                print()
+           
+        print('%d iterations' % (epoch+1))
+        print('recon_error: %.3f' % np.mean(train_res_recon_error))
+        print('perplexity: %.3f' % np.mean(train_res_perplexity))
+        print()
     
     print(f'ended run {EPOCHES} epoches in {round(time.time() - since, 1)} seconds\n')
     return vq_model
@@ -83,7 +82,7 @@ def train_AR_prior(vq_model,train_loader):
     train_con = []
     test_loss = []
     test_con = []
-    for i in range(5):
+    for i in range(100):
         for data in train_loader:
             b = data.shape[0]
             z = model._encoder(data)
@@ -117,7 +116,7 @@ def prediction(vq_model, pixelcnn_model, data_loader, some_arbitrary_thresh = 0.
         resmaple_shape = quantized.shape
         X_orig = torch.argmax(encoding, dim = 1).reshape(b,c,64,64).float()
         X_new = torch.clone(X_orig)
-        some_arbitrary_thresh = 0.001
+        some_arbitrary_thresh = 0.005
         for i in range(64):
             for j in range(64):
                 if i < starting_point[0] or (i == starting_point[0] and j < starting_point[1]):
