@@ -3,6 +3,9 @@
 Created on Wed Aug  4 18:07:18 2021
 
 @author: tamiryuv
+
+ original notebook : https://github.com/pilipolio/learn-pytorch/blob/master/201708_ToyPixelCNN.ipynb
+
 """
 import numpy as np
 import torch
