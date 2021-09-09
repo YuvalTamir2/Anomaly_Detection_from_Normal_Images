@@ -28,3 +28,10 @@ _________________________________________________________________
 
 
 ______________________________________________________________________
+
+VQ-VAE architecture was inspired by :  Aäron van den Oord et al. in PyTorch (https://colab.research.google.com/github/zalandoresearch/pytorch-vq-vae/blob/master/vq-vae.ipynb)
+SimplePixelCNN architecture was inspired by :  https://github.com/pilipolio/learn-pytorch/blob/master/201708_ToyPixelCNN.ipynb
+
+
+
+
