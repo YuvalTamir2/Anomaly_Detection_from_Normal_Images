@@ -9,6 +9,12 @@ link : https://doi.org/10.3390/app10238660
 
 _______________________________________________________________
 
-# Example 
+# Example 1 
                               
 <img src="images/original.jpeg"><img src="images/direct.jpeg"><img src="images/resampled.jpeg"><img src="images/difference.jpeg">
+_________________________________________________________________
+
+# Example 2
+
+<img src="images/original_anomalous_screw.png"><img src="images/direct_recon_screw.jpeg"><img src="images/resampled_recon_screw.jpeg"><img src="images/anomaly_score_map.jpeg">
+
