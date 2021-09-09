@@ -10,6 +10,12 @@ link : https://doi.org/10.3390/app10238660
 _______________________________________________________________
 
 # Example 1 
+
+| Anomoulous Image | direct recon | resampled recon | anomaly score map | 
+| --- | --- | --- | --- |
+| <img src="images/original.jpeg"> | <img src="images/direct.jpeg"> | <img src="images/resampled.jpeg"> | <img src="images/difference.jpeg"> |
+
+
                               
 <img src="images/original.jpeg"><img src="images/direct.jpeg"><img src="images/resampled.jpeg"><img src="images/difference.jpeg">
 _________________________________________________________________
@@ -20,31 +26,4 @@ _________________________________________________________________
 | Anomoulous Image | direct recon | resampled recon | anomaly score map | 
 | --- | --- | --- | --- |
 | <img src="images/original_anomalous_screw.png" height="256" width="256"> | <img src="images/direct_recon_screw.jpeg" height="256" width="256"> | <img src="images/resampled_recon_screw.jpeg" height="256" width="256"> | <img src="images/anomaly_score_map.jpeg" height="256" width="256"> |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p float="left">
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-  <img src="images/original_anomalous_screw.png" height="256" width="240" />
-</p>
-
 ______________________________________________________________________
