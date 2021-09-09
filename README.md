@@ -11,17 +11,20 @@ _______________________________________________________________
 
 # Example 1 
 
+
 | Anomoulous Image | direct recon | resampled recon | anomaly score map | 
 | --- | --- | --- | --- |
-| <img src="images/original.jpeg"> | <img src="images/direct.jpeg"> | <img src="images/resampled.jpeg"> | <img src="images/difference.jpeg"> |
+| <img src="images/original_anomalous_screw.png" height="256" width="256"> | <img src="images/direct_recon_screw.jpeg" height="256" width="256"> | <img src="images/resampled_recon_screw.jpeg" height="256" width="256"> | <img src="images/anomaly_score_map.jpeg" height="256" width="256"> |
+
 
 
 _________________________________________________________________
 
 # Example 2
 
-
 | Anomoulous Image | direct recon | resampled recon | anomaly score map | 
 | --- | --- | --- | --- |
-| <img src="images/original_anomalous_screw.png" height="256" width="256"> | <img src="images/direct_recon_screw.jpeg" height="256" width="256"> | <img src="images/resampled_recon_screw.jpeg" height="256" width="256"> | <img src="images/anomaly_score_map.jpeg" height="256" width="256"> |
+| <img src="images/original.jpeg"> | <img src="images/direct.jpeg"> | <img src="images/resampled.jpeg"> | <img src="images/difference.jpeg"> |
+
+
 ______________________________________________________________________
