@@ -3,6 +3,9 @@
 Created on Thu Jul 29 14:30:08 2021
 
 @author: tamiryuv
+
+original pytorch notebook : https://colab.research.google.com/github/zalandoresearch/pytorch-vq-vae/blob/master/vq-vae.ipynb
+
 """
 import torch
 import torch.nn as nn
