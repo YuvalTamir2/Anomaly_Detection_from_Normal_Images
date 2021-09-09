@@ -1,7 +1,7 @@
 # Anomaly Detection from Normal Images
 
 
-Main Ideas Taken From and Inspired By - Image Anomaly Detection Using Normal Data Only by
+Inspired By - Image Anomaly Detection Using Normal Data Only by
 Latent Space Resampling
 
 link : https://doi.org/10.3390/app10238660
@@ -29,8 +29,6 @@ _________________________________________________________________
 
 ______________________________________________________________________
 
-VQ-VAE architecture was inspired by :  Aäron van den Oord et al. in PyTorch (https://colab.research.google.com/github/zalandoresearch/pytorch-vq-vae/blob/master/vq-vae.ipynb)
-SimplePixelCNN architecture was inspired by :  https://github.com/pilipolio/learn-pytorch/blob/master/201708_ToyPixelCNN.ipynb
 
 
 
