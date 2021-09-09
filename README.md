@@ -16,5 +16,5 @@ _________________________________________________________________
 
 # Example 2
 
-<img src="images/original_anomalous_screw.png"><img src="images/direct_recon_screw.jpeg"><img src="images/resampled_recon_screw.jpeg"><img src="images/anomaly_score_map.jpeg">
+<img src="images/original_anomalous_screw.png" height="48" width="48"><img src="images/direct_recon_screw.jpeg" height="48" width="48"><img src="images/resampled_recon_screw.jpeg" height="48" width="48"><img src="images/anomaly_score_map.jpeg" height="48" width="48">
 
