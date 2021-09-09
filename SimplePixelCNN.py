@@ -43,7 +43,7 @@ class PixelCNN(nn.Module):
     n_channels = 4
     kernel_size = 7
     padding = 3
-    n_pixels_out = 512 # binary 0/1 pixels
+    n_pixels_out = 512 #num embeddings (VQ VAE codebook)
     
     def __init__(self):
         super(PixelCNN, self).__init__()
