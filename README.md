@@ -16,10 +16,10 @@ _________________________________________________________________
 
 # Example 2
 <p float="left">
-  <img src="images/original_anomalous_screw.png" height="256" width="250" />
-  <img src="images/original_anomalous_screw.png" height="256" width="250" />
-  <img src="images/original_anomalous_screw.png" height="256" width="250" />
-  <img src="images/original_anomalous_screw.png" height="256" width="250" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
+  <img src="images/original_anomalous_screw.png" height="256" width="240" />
 </p>
 
 ______________________________________________________________________
