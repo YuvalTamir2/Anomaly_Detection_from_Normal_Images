@@ -49,7 +49,7 @@ def train_vq_vae(train_loader, vq_model):
         for idx,data in enumerate(train_loader):
             #data = data / 255.
             vq_optimizer.zero_grad()
-            vq_loss, data_recon, perplexity = model(data)
+            vq_loss, data_recon, perplexity = vq_model(data)
             recon_error = F.binary_cross_entropy(data_recon, data)
             loss = recon_error + vq_loss
             loss.backward()
@@ -87,7 +87,7 @@ def train_AR_prior(vq_model,train_loader):
             b = data.shape[0]
             z = model._encoder(data)
             z = model._pre_vq_conv(z)
-            loss,quantized,pre,encoding = model._vq_vae(z)
+            loss,quantized,pre,encoding = vq_model._vq_vae(z)
             X = torch.argmax(encoding, dim = 1).reshape(b,c,64,64).float()
             ar_optimizer.zero_grad()
             loss = F.cross_entropy(input=cnn(X), target=torch.squeeze(X).long().reshape(-1,64,64))
@@ -116,9 +116,9 @@ def prediction(vq_model, pixelcnn_model, data_loader, some_arbitrary_thresh = 0.
         resmaple_shape = quantized.shape
         X_orig = torch.argmax(encoding, dim = 1).reshape(b,c,64,64).float()
         X_new = torch.clone(X_orig)
-        some_arbitrary_thresh = 0.005
-        for i in range(64):
-            for j in range(64):
+        some_arbitrary_thresh = 0.005 
+        for i in range(64):  # codebook size (rows)
+            for j in range(64): # codebook size (cols)
                 if i < starting_point[0] or (i == starting_point[0] and j < starting_point[1]):
                     continue
                 out = pixelcnn_model(X_orig)
