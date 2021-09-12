@@ -26,7 +26,7 @@ _________________________________________________________________
 
 | Anomoulous Image | Direct recon | Resampled recon | Anomaly score map | 
 | --- | --- | --- | --- |
-| <img src="images/original.jpeg"> | <img src="images/direct.jpeg"> | <img src="images/resampled.jpeg"> | <img src="images/difference.jpeg"> |
+| <img src="images/original.jpeg" height="256" width="256"> | <img src="images/direct.jpeg" height="256" width="256"> | <img src="images/resampled.jpeg" height="256" width="256"> | <img src="images/difference.jpeg" height="256" width="256"> |
 
 
 ______________________________________________________________________
